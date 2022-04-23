@@ -1,0 +1,17 @@
+1.  git init
+    初始化
+2.  git add <file>
+    添加文件
+3.  git commit -m <message>
+    提交仓库,message用引号
+4.  git status
+    查看状态
+5.  git diff
+    查看变化，diff是different缩写
+6.  git log <--pretty=online>
+    查看日志
+7.  git reset --hard commit_id
+    版本回退,commit_id 可以不写全，只写部份
+    回退上个版本：git reset --hard HEAD^ 
+8.  git reflog
+    查看每一次操作记录,可找回之前最新的版本
