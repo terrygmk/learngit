@@ -37,4 +37,5 @@
     创建dev分支
 16. git checkout dev
     切换dev分支
-14. git checkout -b dev
+14. git merge dev
+    先切换到master主分支，再执行合并分支
