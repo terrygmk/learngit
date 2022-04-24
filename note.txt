@@ -1,9 +1,9 @@
 1.  git init
     初始化
 2.  git add <file>
-    添加文件
+    添加/修改文件,保存到Stage
 3.  git commit -m <message>
-    提交仓库,message用引号
+    提交stage到分支仓库,message用引号
 4.  git status
     查看状态
 5.  git diff
@@ -15,3 +15,26 @@
     回退上个版本：git reset --hard HEAD^ 
 8.  git reflog
     查看每一次操作记录,可找回之前最新的版本
+9.  git checkout -- <file>      新命令：git restore <file>
+    撤销工作区的修改
+    a.修改后还没添加到暂存区,撤销后和版本库是一样的状态。 
+    b.修改后已经添加到暂存区，撤销后回到添加到暂存区后的一样状态。
+10. git reset HEAD readme.txt  新命令： git restore --staged <file>.
+    暂存区的修改撤销掉
+11. git rm <file>
+    删除文件，还要commit一下，才会更新版本库
+12. git remote add origin git@github.com:michaelliao/learngit.git
+    远程关联
+12. git push -u origin master
+    远程推送
+    由于远程库是空的，我们第一次推送master分支时，加上了-u参数，Git不但会把本地的master分支内容推送的远程新的master分支，还会把本地的master分支和远程的master分支关联起来，在以后的推送或者拉取时就可以简化命令。
+13. git clone git@github.com:michaelliao/gitskills.git
+    远程克隆
+    假设我们从零开发，那么最好的方式是先创建远程库，然后，从远程库克隆。
+14. git branch
+    查看所有分支
+15. git branch dev
+    创建dev分支
+16. git checkout dev
+    切换dev分支
+14. git checkout -b dev
