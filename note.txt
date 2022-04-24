@@ -39,3 +39,5 @@
     切换dev分支
 14. git merge dev
     先切换到master主分支，再执行合并分支
+15. git switch -c feature1
+    创建并切换新分支feature1
